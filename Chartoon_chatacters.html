@@ -1,0 +1,166 @@
+
+<!DOCTYPE html>
+
+<!--
+In this file, comments are used to identify different parts of the code by letter.
+The Sporclone Instructions file will refer to letters when describing the sequence of
+steps necessary to create a working Sporclone game. Complete the project according
+to the order of the NUMBERED instructions, not the order of the letters.
+DO NOT DELETE THE LETTER COMMENTS AFTER YOU COMPLETE STEPS!!!!!
+-->
+
+<html>
+<head>
+<!-- a. -->
+<title>Sporclone: Cartoon Characters</title>
+
+<!-- b. -->
+<link rel="stylesheet" href="css/main.css">
+
+<!-- You may optionally style the table in your answers section here. -->
+<style>
+table {
+}
+tr {
+}
+th {
+}
+td {
+}
+table span {
+    /* applies only to span tags within table */
+    border: 1px solid #AAAAAA;
+    display: inline-block;
+    height: 20px;
+    width: 200px;
+}
+</style>
+
+<script>
+/*********** Game configuration ***********/
+// c.
+var answers = ["Arthur", "Beast Boy | Beastboy", "Bloo", "Chowder","Cosmo","Courage " ,"Danny Phantom | Danny", "Dexter", "Ed",  "Kim Possible | Kim", "Lazlo",  "Scoobydoo | Scooby doo", "Sponge-bob-square-pants | Sponge bob", "T.J. |T.J. Detweiler", "Bob the Tomato | Bob", "Yogi Bear","Bugs Bunny" ,"Jerry Mouse | Jerry","The Brain | Brain", "Rocky" ];
+// d.
+var time_limit = 80; // in seconds
+</script>
+
+</head>
+
+
+<!-- e. -->
+<body onload= "setup()">
+
+<header>
+    <h1>Sporclone</h1>
+</header>
+
+<div class="frame">
+
+    <section>
+
+        <aside>
+            <h3>More Games</h3>
+            <ul>
+            <!-- f. -->
+            <li><a href="name_that_mustache_style.html">Mustache Quiz</a></li>
+            <li><a href="disney_princesses.html">Disney Princesses Quiz</a></li>
+            </ul>
+        </aside>
+
+        <!-- g. -->
+        <img class="icon" src="img/characters/icon.jpg" alt="quiz logo">
+
+        <!-- h. -->
+        <h2>Name the cartoon character!<h2>
+
+    </section>
+
+    <section>
+
+        <div class="column">
+            <!-- i. -->
+            <input id="start" type="button" value="PLAY GAME" onclick="start()">
+        </div>
+
+        <div class="column">
+            <!-- j. -->
+            <h3>Enter the characters name:</h3>
+
+            <!-- k.  -->
+            <input id="guess" type="text" onkeyup="check()">
+        </div>
+
+        <div class="column">
+            <h3>Score</h3>
+            <span id="score"></span>
+        </div>
+
+        <div class="column">
+            <h3>Time</h3>
+            <span id="time"></span>
+        </div>
+
+    </section>
+
+    <section>
+
+        <!-- l. -->
+        <table>
+        <tr>
+        <td><img src="img/characters/ARTHUR.png"><br><span id="answer0"></span></td>
+        <td><img src="img/characters/Beast_boy.jpg"><br><span id="answer1"></span></td>
+        <td><img src="img/characters/Bloo.png"><br><span id="answer2"></span></td>
+        <td><img src="img/characters/Chowder.jpg"><br><span id="answer3"></span></td>
+        </tr>
+        <tr>
+        <td><img src="img/characters/Cosmo.jpg"><br><span id="answer4"></span></td>
+        <td><img src="img/characters/Courage.png"><br><span id="answer5"></span></td>
+        <td><img src="img/characters/Danny.png"><br><span id="answer6"></span></td>
+        <td><img src="img/characters/Dexter.jpg"><br><span id="answer7"></span></td>
+        
+        </tr>
+        <td><img src="img/characters/Ed.png"><br><span id="answer8"></span></td>
+        <td><img src="img/characters/Kim_Possible.jpg"><br><span id="answer9"></span></td>
+        <td><img src="img/characters/Lazlo.png"><br><span id="answer10"></span></td>
+        <td><img src="img/characters/Scoobydoo.jpg"><br><span id="answer11"></span></td>
+        </tr>
+        <tr>
+        <td><img src="img/characters/Spongebob-squarepants.png"><br><span id="answer12"></span></td>
+        <td><img src="img/characters/T.jpg"><br><span id="answer13"></span></td>
+        <td><img src="img/characters/bob.jpg"><br><span id="answer14"></span></td>
+        <td><img src="img/characters/Yogi_Bear.png"><br><span id="answer15"></span></td>
+        </tr>
+        <tr>
+        <td><img src="img/characters/bugsbunny.png"><br><span id="answer16"></span></td>
+        <td><img src="img/characters/Jerry_Mouse.png"><br><span id="answer17"></span></td>
+        <td><img src="img/characters/The_Brain.png"><br><span id="answer18"></span></td>
+        <td><img src="img/characters/Rocky.jpg"><br><span id="answer19"></span></td>
+        
+        </tr>
+        <tr>
+        
+        
+        </tr>
+        <tr>
+        
+       
+        </tr>
+        
+        </table>
+
+    </section>
+
+    <footer>
+
+        <!-- m. -->
+        <p>Quiz by Emma #1</p>
+
+    </footer>
+
+</div>
+
+<!-- n. -->
+<script src="js/sporclone.js"></script>
+
+</body>
+</html>
